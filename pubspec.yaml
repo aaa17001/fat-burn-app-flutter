@@ -5,6 +5,16 @@ version: 1.0.0+1
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
+  
+  # 注释掉需要实际文件的 assets
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
+  # 
+  # fonts:
+  #   - family: DinAlternate
+  #     fonts:
+  #       - asset: assets/fonts/DINAlternate.ttf
 
 dependencies:
   flutter:
