@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'exercise_detail_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -293,7 +294,20 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ExerciseDetailScreen(
+                          exerciseName: name,
+                          icon: icon,
+                          fatPercentage: fatPercentage,
+                          duration: duration,
+                          fatBurn: fatBurn,
+                        ),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: isRecommended ? const Color(0xFFFF6B35) : const Color(0xFF00D9B6),
                     foregroundColor: Colors.white,
