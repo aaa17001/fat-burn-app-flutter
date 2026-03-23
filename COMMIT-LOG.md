@@ -63,7 +63,8 @@
 - ✅ app-release.apk - Android 发布版本 (19MB)
 
 **提交者：** OpenClaw Agent  
-**提交哈希：** [待生成]
+**提交哈希：** 6debca7  
+**推送状态：** ✅ 已推送到私有仓库
 
 ---
 
