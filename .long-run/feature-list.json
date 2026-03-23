@@ -1,0 +1,1369 @@
+{
+  "project": "FatBurn Coach",
+  "version": "1.0",
+  "createdAt": "2026-03-23T09:00:00Z",
+  "updatedAt": "2026-03-24T06:15:00Z",
+  "totalFeatures": 200,
+  "completedFeatures": 70,
+  "pendingFeatures": 130,
+  "progress": 35,
+  "features": [
+    {
+      "id": "feat-001-01",
+      "category": "database",
+      "priority": "P0",
+      "description": "应用首次启动时创建 SQLite 数据库",
+      "steps": [
+        "启动应用",
+        "检查数据库文件是否创建",
+        "验证数据库路径正确",
+        "验证数据库版本正确"
+      ],
+      "acceptanceCriteria": [
+        "数据库文件存在于正确路径",
+        "数据库版本为 1",
+        "无崩溃或错误"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-02",
+      "category": "database",
+      "priority": "P0",
+      "description": "创建 users 表",
+      "steps": [
+        "检查 users 表是否存在",
+        "验证表结构正确",
+        "验证字段完整"
+      ],
+      "acceptanceCriteria": [
+        "users 表存在",
+        "包含所有必需字段",
+        "主键正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-03",
+      "category": "database",
+      "priority": "P0",
+      "description": "users 表有 id 字段（主键）",
+      "steps": [
+        "验证 id 字段存在",
+        "验证 id 是主键",
+        "验证 id 自增"
+      ],
+      "acceptanceCriteria": [
+        "id 字段存在",
+        "是主键",
+        "AUTOINCREMENT"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-04",
+      "category": "database",
+      "priority": "P0",
+      "description": "users 表有 age 字段",
+      "steps": [
+        "验证 age 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "age 字段存在",
+        "类型 INTEGER"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-05",
+      "category": "database",
+      "priority": "P0",
+      "description": "users 表有 weight 字段",
+      "steps": [
+        "验证 weight 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "weight 字段存在",
+        "类型 REAL"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-06",
+      "category": "database",
+      "priority": "P0",
+      "description": "users 表有 height 字段",
+      "steps": [
+        "验证 height 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "height 字段存在",
+        "类型 INTEGER"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-07",
+      "category": "database",
+      "priority": "P0",
+      "description": "users 表有 gender 字段",
+      "steps": [
+        "验证 gender 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "gender 字段存在",
+        "类型 TEXT"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-08",
+      "category": "database",
+      "priority": "P0",
+      "description": "users 表有 created_at 字段",
+      "steps": [
+        "验证 created_at 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "created_at 字段存在",
+        "类型 TEXT"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-09",
+      "category": "database",
+      "priority": "P0",
+      "description": "users 表有 updated_at 字段",
+      "steps": [
+        "验证 updated_at 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "updated_at 字段存在",
+        "类型 TEXT"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-10",
+      "category": "database",
+      "priority": "P0",
+      "description": "数据库版本管理",
+      "steps": [
+        "验证数据库版本号",
+        "验证版本升级机制"
+      ],
+      "acceptanceCriteria": [
+        "版本号正确",
+        "支持升级"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-11",
+      "category": "database",
+      "priority": "P0",
+      "description": "数据库升级处理（onUpgrade）",
+      "steps": [
+        "验证 onUpgrade 方法存在",
+        "验证版本升级逻辑"
+      ],
+      "acceptanceCriteria": [
+        "onUpgrade 方法实现",
+        "支持版本迁移"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-12",
+      "category": "database",
+      "priority": "P0",
+      "description": "创建 exercise_records 表",
+      "steps": [
+        "检查 exercise_records 表是否存在",
+        "验证表结构正确",
+        "验证字段完整"
+      ],
+      "acceptanceCriteria": [
+        "exercise_records 表存在",
+        "包含所有必需字段",
+        "主键正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-13",
+      "category": "database",
+      "priority": "P0",
+      "description": "exercise_records 表有 user_id 外键",
+      "steps": [
+        "验证 user_id 字段存在",
+        "验证外键关系"
+      ],
+      "acceptanceCriteria": [
+        "user_id 字段存在",
+        "外键关系正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-14",
+      "category": "database",
+      "priority": "P0",
+      "description": "exercise_records 表有 exercise_type 字段",
+      "steps": [
+        "验证 exercise_type 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "exercise_type 字段存在",
+        "类型 TEXT"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-001-15",
+      "category": "database",
+      "priority": "P0",
+      "description": "exercise_records 表有 duration_seconds 字段",
+      "steps": [
+        "验证 duration_seconds 字段存在",
+        "验证字段类型正确"
+      ],
+      "acceptanceCriteria": [
+        "duration_seconds 字段存在",
+        "类型 INTEGER"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:32:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-002-01",
+      "category": "models",
+      "priority": "P0",
+      "description": "创建 User 模型类",
+      "steps": [
+        "创建 user.dart 文件",
+        "定义 User 类",
+        "添加字段"
+      ],
+      "acceptanceCriteria": [
+        "User 类存在",
+        "所有字段正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-002-02",
+      "category": "models",
+      "priority": "P0",
+      "description": "User 模型 fromMap 方法",
+      "steps": [
+        "实现 fromMap 方法",
+        "测试数据转换"
+      ],
+      "acceptanceCriteria": [
+        "fromMap 方法正确",
+        "数据转换准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-002-03",
+      "category": "models",
+      "priority": "P0",
+      "description": "User 模型 toMap 方法",
+      "steps": [
+        "实现 toMap 方法",
+        "测试数据转换"
+      ],
+      "acceptanceCriteria": [
+        "toMap 方法正确",
+        "数据转换准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-002-04",
+      "category": "models",
+      "priority": "P0",
+      "description": "User 模型 copyWith 方法",
+      "steps": [
+        "实现 copyWith 方法",
+        "测试复制功能"
+      ],
+      "acceptanceCriteria": [
+        "copyWith 方法正确",
+        "复制功能正常"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-002-05",
+      "category": "models",
+      "priority": "P0",
+      "description": "User 模型 BMI 计算",
+      "steps": [
+        "实现 bmi getter",
+        "测试 BMI 计算"
+      ],
+      "acceptanceCriteria": [
+        "BMI 计算正确",
+        "公式准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-002-06",
+      "category": "models",
+      "priority": "P0",
+      "description": "User 模型 BMI 分类",
+      "steps": [
+        "实现 bmiCategory getter",
+        "测试分类逻辑"
+      ],
+      "acceptanceCriteria": [
+        "分类正确",
+        "符合标准"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-003-01",
+      "category": "models",
+      "priority": "P0",
+      "description": "创建 ExerciseRecord 模型类",
+      "steps": [
+        "创建 exercise_record.dart 文件",
+        "定义 ExerciseRecord 类",
+        "添加字段"
+      ],
+      "acceptanceCriteria": [
+        "ExerciseRecord 类存在",
+        "所有字段正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-003-02",
+      "category": "models",
+      "priority": "P0",
+      "description": "ExerciseRecord 模型 fromMap 方法",
+      "steps": [
+        "实现 fromMap 方法",
+        "测试数据转换"
+      ],
+      "acceptanceCriteria": [
+        "fromMap 方法正确",
+        "数据转换准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-003-03",
+      "category": "models",
+      "priority": "P0",
+      "description": "ExerciseRecord 模型 toMap 方法",
+      "steps": [
+        "实现 toMap 方法",
+        "测试数据转换"
+      ],
+      "acceptanceCriteria": [
+        "toMap 方法正确",
+        "数据转换准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-003-04",
+      "category": "models",
+      "priority": "P0",
+      "description": "ExerciseRecord 模型 copyWith 方法",
+      "steps": [
+        "实现 copyWith 方法",
+        "测试复制功能"
+      ],
+      "acceptanceCriteria": [
+        "copyWith 方法正确",
+        "复制功能正常"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-003-05",
+      "category": "models",
+      "priority": "P0",
+      "description": "ExerciseRecord 运动类型中文转换",
+      "steps": [
+        "实现 exerciseTypeChinese getter",
+        "测试转换逻辑"
+      ],
+      "acceptanceCriteria": [
+        "转换正确",
+        "所有类型支持"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-003-06",
+      "category": "models",
+      "priority": "P0",
+      "description": "ExerciseRecord 时长格式化",
+      "steps": [
+        "实现 formattedDuration getter",
+        "测试格式化"
+      ],
+      "acceptanceCriteria": [
+        "格式化正确",
+        "显示友好"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-003-07",
+      "category": "models",
+      "priority": "P0",
+      "description": "ExerciseRecord 开始时间格式化",
+      "steps": [
+        "实现 formattedStartTime getter",
+        "测试格式化"
+      ],
+      "acceptanceCriteria": [
+        "格式化正确",
+        "显示友好"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:33:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-01",
+      "category": "provider",
+      "priority": "P0",
+      "description": "创建 UserProvider 类",
+      "steps": [
+        "创建 user_provider.dart 文件",
+        "定义 UserProvider 类",
+        "继承 ChangeNotifier"
+      ],
+      "acceptanceCriteria": [
+        "UserProvider 类存在",
+        "继承正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-02",
+      "category": "provider",
+      "priority": "P0",
+      "description": "UserProvider 集成 DatabaseHelper",
+      "steps": [
+        "导入 DatabaseHelper",
+        "创建实例",
+        "测试连接"
+      ],
+      "acceptanceCriteria": [
+        "集成成功",
+        "连接正常"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-03",
+      "category": "provider",
+      "priority": "P0",
+      "description": "UserProvider initialize 方法",
+      "steps": [
+        "实现 initialize 方法",
+        "测试初始化"
+      ],
+      "acceptanceCriteria": [
+        "initialize 方法正确",
+        "初始化成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-04",
+      "category": "provider",
+      "priority": "P0",
+      "description": "UserProvider loadUserSettings 方法",
+      "steps": [
+        "实现 loadUserSettings 方法",
+        "测试加载功能"
+      ],
+      "acceptanceCriteria": [
+        "loadUserSettings 方法正确",
+        "加载成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-05",
+      "category": "provider",
+      "priority": "P0",
+      "description": "UserProvider saveUserSettings 方法",
+      "steps": [
+        "实现 saveUserSettings 方法",
+        "测试保存功能",
+        "验证数据持久化"
+      ],
+      "acceptanceCriteria": [
+        "saveUserSettings 方法正确",
+        "保存成功",
+        "数据持久化"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-06",
+      "category": "provider",
+      "priority": "P0",
+      "description": "UserProvider updateUserInfo 方法",
+      "steps": [
+        "实现 updateUserInfo 方法",
+        "测试更新功能"
+      ],
+      "acceptanceCriteria": [
+        "updateUserInfo 方法正确",
+        "更新成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-07",
+      "category": "provider",
+      "priority": "P0",
+      "description": "UserProvider deleteUser 方法",
+      "steps": [
+        "实现 deleteUser 方法",
+        "测试删除功能"
+      ],
+      "acceptanceCriteria": [
+        "deleteUser 方法正确",
+        "删除成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-004-08",
+      "category": "provider",
+      "priority": "P0",
+      "description": "UserProvider isUserConfigured getter",
+      "steps": [
+        "实现 isUserConfigured getter",
+        "测试检查逻辑"
+      ],
+      "acceptanceCriteria": [
+        "isUserConfigured 正确",
+        "检查准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:34:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-01",
+      "category": "provider",
+      "priority": "P0",
+      "description": "创建 ExerciseProvider 类",
+      "steps": [
+        "创建 exercise_provider.dart 文件",
+        "定义 ExerciseProvider 类",
+        "继承 ChangeNotifier"
+      ],
+      "acceptanceCriteria": [
+        "ExerciseProvider 类存在",
+        "继承正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-02",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider 集成 DatabaseHelper",
+      "steps": [
+        "导入 DatabaseHelper",
+        "创建实例",
+        "测试连接"
+      ],
+      "acceptanceCriteria": [
+        "集成成功",
+        "连接正常"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-03",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider initialize 方法",
+      "steps": [
+        "实现 initialize 方法",
+        "测试初始化"
+      ],
+      "acceptanceCriteria": [
+        "initialize 方法正确",
+        "初始化成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-04",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider loadHistoryRecords 方法",
+      "steps": [
+        "实现 loadHistoryRecords 方法",
+        "测试加载功能"
+      ],
+      "acceptanceCriteria": [
+        "loadHistoryRecords 方法正确",
+        "加载成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-05",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider loadStatistics 方法",
+      "steps": [
+        "实现 loadStatistics 方法",
+        "测试统计加载"
+      ],
+      "acceptanceCriteria": [
+        "loadStatistics 方法正确",
+        "统计正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-06",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider saveExerciseRecord 方法",
+      "steps": [
+        "实现 saveExerciseRecord 方法",
+        "测试保存功能",
+        "验证数据持久化"
+      ],
+      "acceptanceCriteria": [
+        "saveExerciseRecord 方法正确",
+        "保存成功",
+        "数据持久化"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-07",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider getRecordsByDate 方法",
+      "steps": [
+        "实现 getRecordsByDate 方法",
+        "测试按日期查询"
+      ],
+      "acceptanceCriteria": [
+        "getRecordsByDate 方法正确",
+        "查询准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-08",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider deleteExerciseRecord 方法",
+      "steps": [
+        "实现 deleteExerciseRecord 方法",
+        "测试删除功能"
+      ],
+      "acceptanceCriteria": [
+        "deleteExerciseRecord 方法正确",
+        "删除成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-09",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider getTodayRecords 方法",
+      "steps": [
+        "实现 getTodayRecords 方法",
+        "测试今日记录查询"
+      ],
+      "acceptanceCriteria": [
+        "getTodayRecords 方法正确",
+        "查询准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-10",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider getThisWeekRecords 方法",
+      "steps": [
+        "实现 getThisWeekRecords 方法",
+        "测试本周记录查询"
+      ],
+      "acceptanceCriteria": [
+        "getThisWeekRecords 方法正确",
+        "查询准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-005-11",
+      "category": "provider",
+      "priority": "P0",
+      "description": "ExerciseProvider getThisMonthRecords 方法",
+      "steps": [
+        "实现 getThisMonthRecords 方法",
+        "测试本月记录查询"
+      ],
+      "acceptanceCriteria": [
+        "getThisMonthRecords 方法正确",
+        "查询准确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-23T20:35:00Z",
+      "sessionId": "session-001"
+    },
+    {
+      "id": "feat-006-01",
+      "category": "ui",
+      "priority": "P0",
+      "description": "创建 HistoryScreen 页面",
+      "steps": [
+        "创建 history_screen.dart 文件",
+        "定义 HistoryScreen 类",
+        "继承 StatefulWidget"
+      ],
+      "acceptanceCriteria": [
+        "HistoryScreen 类存在",
+        "继承正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-006-02",
+      "category": "ui",
+      "priority": "P0",
+      "description": "HistoryScreen AppBar",
+      "steps": [
+        "实现 AppBar",
+        "设置标题",
+        "设置主题色"
+      ],
+      "acceptanceCriteria": [
+        "AppBar 正确",
+        "标题显示",
+        "主题色正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-006-03",
+      "category": "ui",
+      "priority": "P0",
+      "description": "HistoryScreen 日期选择器",
+      "steps": [
+        "实现日期选择按钮",
+        "实现 showDatePicker",
+        "实现日期过滤"
+      ],
+      "acceptanceCriteria": [
+        "日期选择器工作",
+        "过滤正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-006-04",
+      "category": "ui",
+      "priority": "P0",
+      "description": "HistoryScreen 搜索框",
+      "steps": [
+        "实现 TextField",
+        "实现搜索逻辑",
+        "实现实时过滤"
+      ],
+      "acceptanceCriteria": [
+        "搜索框工作",
+        "实时过滤"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-006-05",
+      "category": "ui",
+      "priority": "P0",
+      "description": "HistoryScreen 记录列表",
+      "steps": [
+        "实现 ListView.builder",
+        "实现 Card 组件",
+        "显示运动信息"
+      ],
+      "acceptanceCriteria": [
+        "列表显示",
+        "数据正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-006-06",
+      "category": "ui",
+      "priority": "P0",
+      "description": "HistoryScreen 左滑删除",
+      "steps": [
+        "实现 Dismissible",
+        "实现删除确认",
+        "实现删除逻辑"
+      ],
+      "acceptanceCriteria": [
+        "左滑删除工作",
+        "确认对话框",
+        "删除成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-006-07",
+      "category": "ui",
+      "priority": "P0",
+      "description": "HistoryScreen 详情查看",
+      "steps": [
+        "实现点击事件",
+        "实现 AlertDialog",
+        "显示详细信息"
+      ],
+      "acceptanceCriteria": [
+        "点击查看详情",
+        "信息完整"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-006-08",
+      "category": "ui",
+      "priority": "P0",
+      "description": "HistoryScreen 空状态处理",
+      "steps": [
+        "实现空状态检查",
+        "实现空状态 UI",
+        "显示引导文字"
+      ],
+      "acceptanceCriteria": [
+        "空状态显示",
+        "引导文字"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T04:45:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-01",
+      "category": "ui",
+      "priority": "P0",
+      "description": "创建 ProfileScreen 页面",
+      "steps": [
+        "创建 profile_screen.dart 文件",
+        "定义 ProfileScreen 类",
+        "继承 StatefulWidget"
+      ],
+      "acceptanceCriteria": [
+        "ProfileScreen 类存在",
+        "继承正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-02",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 头部卡片",
+      "steps": [
+        "实现头部 Card",
+        "设置渐变背景",
+        "显示图标和标题"
+      ],
+      "acceptanceCriteria": [
+        "头部卡片显示",
+        "主题色正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-03",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 年龄输入框",
+      "steps": [
+        "实现 TextFormField",
+        "实现数字键盘",
+        "实现验证逻辑"
+      ],
+      "acceptanceCriteria": [
+        "输入框工作",
+        "验证正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-04",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 体重输入框",
+      "steps": [
+        "实现 TextFormField",
+        "实现小数输入",
+        "实现验证逻辑"
+      ],
+      "acceptanceCriteria": [
+        "输入框工作",
+        "验证正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-05",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 身高输入框",
+      "steps": [
+        "实现 TextFormField",
+        "实现数字键盘",
+        "实现验证逻辑"
+      ],
+      "acceptanceCriteria": [
+        "输入框工作",
+        "验证正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-06",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 性别选择",
+      "steps": [
+        "实现 RadioListTile",
+        "实现男/女选项",
+        "实现选择逻辑"
+      ],
+      "acceptanceCriteria": [
+        "性别选择工作",
+        "选项正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-07",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 保存按钮",
+      "steps": [
+        "实现 ElevatedButton",
+        "实现保存逻辑",
+        "实现加载状态"
+      ],
+      "acceptanceCriteria": [
+        "保存按钮工作",
+        "保存成功"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-08",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen BMI 显示卡片",
+      "steps": [
+        "实现 BMI Card",
+        "实现 Consumer",
+        "显示 BMI 值和分类"
+      ],
+      "acceptanceCriteria": [
+        "BMI 显示",
+        "分类正确",
+        "颜色正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-09",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 温馨提示卡片",
+      "steps": [
+        "实现信息 Card",
+        "显示提示文字",
+        "设置背景色"
+      ],
+      "acceptanceCriteria": [
+        "提示卡片显示",
+        "文字正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-10",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 表单验证",
+      "steps": [
+        "实现 Form 验证",
+        "实现 validator",
+        "显示错误提示"
+      ],
+      "acceptanceCriteria": [
+        "表单验证工作",
+        "错误提示"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-11",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 数据加载",
+      "steps": [
+        "实现 loadUserData",
+        "实现自动填充",
+        "实现加载状态"
+      ],
+      "acceptanceCriteria": [
+        "数据加载",
+        "自动填充"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-007-12",
+      "category": "ui",
+      "priority": "P0",
+      "description": "ProfileScreen 保存反馈",
+      "steps": [
+        "实现 SnackBar",
+        "实现成功提示",
+        "实现错误提示"
+      ],
+      "acceptanceCriteria": [
+        "保存反馈",
+        "提示正确"
+      ],
+      "passes": true,
+      "completedAt": "2026-03-24T05:25:00Z",
+      "sessionId": "session-002"
+    },
+    {
+      "id": "feat-008-01",
+      "category": "payment",
+      "priority": "P0",
+      "description": "用户可以打开付费页面",
+      "steps": [
+        "导航到付费页面",
+        "显示订阅选项",
+        "显示终身版选项",
+        "显示价格信息"
+      ],
+      "acceptanceCriteria": [
+        "页面正常打开",
+        "显示所有付费选项",
+        "价格显示正确"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-02",
+      "category": "payment",
+      "priority": "P0",
+      "description": "显示订阅选项（¥9.9/月）",
+      "steps": [
+        "显示订阅卡片",
+        "显示价格",
+        "显示功能列表"
+      ],
+      "acceptanceCriteria": [
+        "订阅卡片显示",
+        "价格正确",
+        "功能列表完整"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-03",
+      "category": "payment",
+      "priority": "P0",
+      "description": "显示终身版选项（¥99）",
+      "steps": [
+        "显示终身版卡片",
+        "显示价格",
+        "显示功能列表"
+      ],
+      "acceptanceCriteria": [
+        "终身版卡片显示",
+        "价格正确",
+        "功能列表完整"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-04",
+      "category": "payment",
+      "priority": "P0",
+      "description": "订阅版功能列表显示",
+      "steps": [
+        "显示无广告",
+        "显示详细统计",
+        "显示个性化计划",
+        "显示数据导出"
+      ],
+      "acceptanceCriteria": [
+        "功能列表完整",
+        "描述准确"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-05",
+      "category": "payment",
+      "priority": "P0",
+      "description": "终身版功能列表显示",
+      "steps": [
+        "显示永久使用",
+        "显示所有功能",
+        "显示性价比"
+      ],
+      "acceptanceCriteria": [
+        "功能列表完整",
+        "描述准确"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-06",
+      "category": "payment",
+      "priority": "P0",
+      "description": "购买按钮实现",
+      "steps": [
+        "实现订阅购买按钮",
+        "实现终身版购买按钮",
+        "实现点击事件"
+      ],
+      "acceptanceCriteria": [
+        "按钮显示",
+        "点击响应"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-07",
+      "category": "payment",
+      "priority": "P0",
+      "description": "Google Play IAP 集成",
+      "steps": [
+        "添加 in_app_purchase 依赖",
+        "配置 Google Play",
+        "实现商品查询"
+      ],
+      "acceptanceCriteria": [
+        "依赖添加",
+        "配置正确",
+        "商品查询成功"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-08",
+      "category": "payment",
+      "priority": "P0",
+      "description": "商品查询和加载",
+      "steps": [
+        "实现 queryProductDetails",
+        "实现商品列表",
+        "实现错误处理"
+      ],
+      "acceptanceCriteria": [
+        "商品加载",
+        "错误处理"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-09",
+      "category": "payment",
+      "priority": "P0",
+      "description": "购买流程实现",
+      "steps": [
+        "实现 purchaseFlow",
+        "实现购买确认",
+        "实现购买回调"
+      ],
+      "acceptanceCriteria": [
+        "购买流程完整",
+        "回调正确"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    },
+    {
+      "id": "feat-008-10",
+      "category": "payment",
+      "priority": "P0",
+      "description": "购买成功处理",
+      "steps": [
+        "实现购买成功回调",
+        "实现功能解锁",
+        "实现状态保存"
+      ],
+      "acceptanceCriteria": [
+        "成功处理",
+        "功能解锁"
+      ],
+      "passes": false,
+      "nextSession": "session-003"
+    }
+  ]
+}
