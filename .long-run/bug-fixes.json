@@ -1,0 +1,32 @@
+{
+  "project": "fat-burn-coach",
+  "type": "bug-fixes",
+  "createdAt": "2026-03-24T09:45:00Z",
+  "bugs": [
+    {
+      "id": "bug-001",
+      "file": "lib/screens/home_screen.dart",
+      "line": 299,
+      "error": "The getter 'context' isn't defined for the class 'HomeScreen'",
+      "fix": "检查代码结构，context 应该在 build 方法内使用",
+      "priority": "P0",
+      "status": "open"
+    },
+    {
+      "id": "bug-002",
+      "file": "integration_test/user_flow_test.dart",
+      "error": "Missing dependency: integration_test",
+      "fix": "添加 integration_test 依赖到 pubspec.yaml",
+      "priority": "P0",
+      "status": "open"
+    },
+    {
+      "id": "bug-003",
+      "file": "test/widget_test.dart",
+      "error": "Compilation failed",
+      "fix": "修复所有编译错误后重新测试",
+      "priority": "P0",
+      "status": "open"
+    }
+  ]
+}

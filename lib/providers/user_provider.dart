@@ -16,7 +16,7 @@ class UserProvider extends ChangeNotifier {
   
   // 便捷属性
   double get weight => _currentUser?.weight ?? 70.0;
-  double get height => _currentUser?.height ?? 170.0;
+  int get height => _currentUser?.height ?? 170;
   int get age => _currentUser?.age ?? 25;
   String get gender => _currentUser?.gender ?? 'male';
   
@@ -24,6 +24,12 @@ class UserProvider extends ChangeNotifier {
   double get bmi {
     if (_currentUser == null) return 0.0;
     return _currentUser!.bmi;
+  }
+  
+  // BMI 分类
+  String get bmiCategory {
+    if (_currentUser == null) return '未知';
+    return _currentUser!.bmiCategory;
   }
   
   // BMR 计算 (Mifflin-St Jeor 公式)
@@ -71,7 +77,7 @@ class UserProvider extends ChangeNotifier {
       final user = User(
         age: age,
         weight: weight,
-        height: height,
+        height: height ?? 170,
         gender: gender,
         createdAt: _currentUser?.createdAt,
         updatedAt: DateTime.now(),
@@ -91,7 +97,7 @@ class UserProvider extends ChangeNotifier {
   /// 更新用户信息
   Future<void> updateUserInfo({
     double? weight,
-    double? height,
+    int? height,
     int? age,
     String? gender,
   }) async {
@@ -100,7 +106,7 @@ class UserProvider extends ChangeNotifier {
       await saveUserSettings(
         age: age ?? 25,
         weight: weight ?? 70.0,
-        height: height ?? 170.0,
+        height: height ?? 170,
         gender: gender ?? 'male',
       );
       return;

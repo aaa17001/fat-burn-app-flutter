@@ -341,7 +341,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
           const SizedBox(height: 12),
           _buildFeatureItem(Icons.check_circle, '无广告干扰', true),
           _buildFeatureItem(Icons.analytics, '详细数据统计', true),
-          _buildFeatureItem(Icons.personalize, '个性化运动计划', true),
+          _buildFeatureItem(Icons.person_outline, '个性化运动计划', true),
           _buildFeatureItem(Icons.download, '数据导出功能', true),
           _buildFeatureItem(Icons.cloud_sync, '多设备同步', true),
           _buildFeatureItem(Icons.support, '优先客户支持', true),

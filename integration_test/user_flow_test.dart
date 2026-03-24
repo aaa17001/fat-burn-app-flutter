@@ -13,7 +13,7 @@ void main() {
     // 测试 1: 完整用户流程
     testWidgets('E2E-001: 完整用户流程测试', (tester) async {
       // 1. 启动应用
-      await tester.pumpWidget(const MyApp());
+      await tester.pumpWidget(const FatBurnCoachApp());
       await tester.pumpAndSettle();
       expect(find.byType(MaterialApp), findsOneWidget);
 
@@ -57,7 +57,7 @@ void main() {
     // 测试 2: 数据持久化
     testWidgets('E2E-002: 数据持久化测试', (tester) async {
       // 1. 启动应用并设置数据
-      await tester.pumpWidget(const MyApp());
+      await tester.pumpWidget(const FatBurnCoachApp());
       await tester.pumpAndSettle();
 
       await tester.tap(find.byIcon(Icons.person));
@@ -83,7 +83,7 @@ void main() {
       await tester.pumpAndSettle();
 
       // 2. 重启应用（模拟）
-      await tester.pumpWidget(const MyApp());
+      await tester.pumpWidget(const FatBurnCoachApp());
       await tester.pumpAndSettle();
 
       // 3. 验证数据保留
@@ -100,7 +100,7 @@ void main() {
     // 测试 3: 历史记录功能
     testWidgets('E2E-003: 历史记录功能测试', (tester) async {
       // 1. 启动应用
-      await tester.pumpWidget(const MyApp());
+      await tester.pumpWidget(const FatBurnCoachApp());
       await tester.pumpAndSettle();
 
       // 2. 导航到历史记录页面
@@ -125,7 +125,7 @@ void main() {
     // 测试 4: 运动计时功能
     testWidgets('E2E-004: 运动计时功能测试', (tester) async {
       // 1. 启动应用
-      await tester.pumpWidget(const MyApp());
+      await tester.pumpWidget(const FatBurnCoachApp());
       await tester.pumpAndSettle();
 
       // 2. 选择运动
@@ -144,7 +144,7 @@ void main() {
     // 测试 5: UI 主题一致性
     testWidgets('E2E-005: UI 主题一致性测试', (tester) async {
       // 1. 启动应用
-      await tester.pumpWidget(const MyApp());
+      await tester.pumpWidget(const FatBurnCoachApp());
       await tester.pumpAndSettle();
 
       // 2. 验证主题色（橙色 #FF6B35）

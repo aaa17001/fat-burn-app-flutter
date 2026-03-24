@@ -104,6 +104,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 12),
             
             _buildExerciseCard(
+              context: context,
               icon: Icons.directions_walk,
               name: '快走',
               duration: '30 分钟',
@@ -115,6 +116,7 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 12),
             
             _buildExerciseCard(
+              context: context,
               icon: Icons.hiking,
               name: '爬坡走 (10%)',
               duration: '30 分钟',
@@ -183,6 +185,7 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _buildExerciseCard({
+    required BuildContext context,
     required IconData icon,
     required String name,
     required String duration,

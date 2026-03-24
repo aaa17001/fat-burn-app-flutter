@@ -1,7 +1,7 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
-import 'models/user.dart';
-import 'models/exercise_record.dart';
+import 'package:fat_burn_coach/models/user.dart';
+import 'package:fat_burn_coach/models/exercise_record.dart';
 
 /// 数据库帮助类 - 单例模式
 /// 负责数据库的初始化、版本管理和 CRUD 操作

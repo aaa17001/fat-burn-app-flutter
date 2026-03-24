@@ -42,9 +42,9 @@ class _HistoryScreenState extends State<HistoryScreen> {
   }
 
   /// 过滤记录
-  void _filterRecords() {
+  Future<void> _filterRecords() async {
     final provider = context.read<ExerciseProvider>();
-    final records = provider.getRecordsByDate(_selectedDate);
+    final records = await provider.getRecordsByDate(_selectedDate);
     
     if (_searchController.text.isEmpty) {
       setState(() {
