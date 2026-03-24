@@ -1205,7 +1205,7 @@
         "显示所有付费选项",
         "价格显示正确"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1223,7 +1223,7 @@
         "价格正确",
         "功能列表完整"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1241,7 +1241,7 @@
         "价格正确",
         "功能列表完整"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1259,7 +1259,7 @@
         "功能列表完整",
         "描述准确"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1276,7 +1276,7 @@
         "功能列表完整",
         "描述准确"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1293,7 +1293,7 @@
         "按钮显示",
         "点击响应"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1311,7 +1311,7 @@
         "配置正确",
         "商品查询成功"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1328,7 +1328,7 @@
         "商品加载",
         "错误处理"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1345,7 +1345,7 @@
         "购买流程完整",
         "回调正确"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     },
     {
@@ -1362,7 +1362,7 @@
         "成功处理",
         "功能解锁"
       ],
-      "passes": false,
+      "passes": true,
       "nextSession": "session-003"
     }
   ]
