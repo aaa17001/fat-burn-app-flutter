@@ -1,0 +1,33 @@
+{
+  "project": "Tool App Template",
+  "version": "1.0",
+  "features": [
+    {
+      "id": "feat-001-01",
+      "category": "core",
+      "priority": "P0",
+      "description": "应用启动",
+      "steps": ["启动应用", "验证无崩溃"],
+      "acceptanceCriteria": ["应用正常启动"],
+      "passes": false
+    },
+    {
+      "id": "feat-001-02",
+      "category": "core",
+      "priority": "P0",
+      "description": "主界面显示",
+      "steps": ["显示主界面", "验证 UI"],
+      "acceptanceCriteria": ["主界面正常显示"],
+      "passes": false
+    },
+    {
+      "id": "feat-002-01",
+      "category": "payment",
+      "priority": "P0",
+      "description": "付费页面打开",
+      "steps": ["导航到付费页", "显示选项"],
+      "acceptanceCriteria": ["付费页面正常"],
+      "passes": false
+    }
+  ]
+}
